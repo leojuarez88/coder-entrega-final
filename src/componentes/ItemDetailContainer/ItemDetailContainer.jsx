@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 //import { getUnProducto } from "../../asyncmock";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
-import { getDoc, doc } from "firebase/firestone";
+import { getDoc, doc } from "firebase/firestore";
 import { db } from "../../services/config";
 
 
