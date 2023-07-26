@@ -14,7 +14,7 @@ const Item = ({id, nombre, precio, img,stock}) => {
         <Card.Text>
           Lamparas y Veladores de la mas alta calidad
         </Card.Text>
-        <Link to={`/Item/${id}`}> Ver Detalles </Link>
+        <Link to={`/item/${id}`}> Ver Detalles </Link>
 
       </Card.Body>
     </Card>
