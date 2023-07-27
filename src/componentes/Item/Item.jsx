@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
 import "./Item.css";
 
-const Item = ({id, nombre, precio, img,stock}) => {
+const Item = ({id, nombre, precio, img, stock}) => {
    return (
     <Card className="cardProducto"style={{ width: '18rem' }}  >
       <Card.Img className="imgProducto" variant="top"  src={img}  alt={nombre}/>

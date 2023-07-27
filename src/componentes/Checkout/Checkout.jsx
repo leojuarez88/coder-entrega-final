@@ -13,7 +13,7 @@ const Checkout = () => {
   const [error, setError] = useState("");
   const [ordenId, setOrdenId] = useState("");
 
-  const { carrito, vaciarCarrito, total, cantidadTotal } = useContext(CarritoContext);
+  const { carrito, vaciarCarrito, total, cantidadTotal} = useContext(CarritoContext);
 
   const manejadorFormulario = (event) => {
     event.preventDefault();
@@ -57,16 +57,20 @@ const Checkout = () => {
     <div>
       <h2> Checkout </h2>
       <form onSubmit={manejadorFormulario}>
-        {carrito.map((producto) => (
-          <div key={producto.item.id}>
-            <p>
-              {" "}
-              {producto.item.nombre} x {producto.cantidad}{" "}
-            </p>
-            <p> {producto.item.precio} </p>
+        {   carrito.map((producto) => (
+          < div key={producto.item.id}>
+                    <p>
+                    {" "}
+                    {producto.item.nombre} x {producto.cantidad}{" "}
+                    </p>
+                    <p> {producto.item.precio} </p>
             <hr />
-          </div>
-        ))}
+            </div>
+        ))
+        
+        }
+
+        <strong>Cantidad Total: {cantidadTotal}</strong>
         <hr />
 
         <div className="form-group">

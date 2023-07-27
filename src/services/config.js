@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCnR4eeq4liKT4Vna40wIx8gawGNEwVpbU",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "coder-entrega-final.firebaseapp.com",
   projectId: "coder-entrega-final",
   storageBucket: "coder-entrega-final.appspot.com",
