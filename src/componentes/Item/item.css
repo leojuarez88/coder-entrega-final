@@ -1,10 +1,10 @@
 .imgProducto{
     width: 270px;
-    object-fit: contain;
+    object-fit: conver;
 }
 
 .cardProducto {
-    background-color: gold;
+    background-color: blue;
     border-radius: 10px;
     width: 15rem;
     padding: 1rem;

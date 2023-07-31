@@ -28,7 +28,7 @@ const ItemDetail = ({id, nombre, precio, img, stock}) => {
         <p>Veladores y Lamparas de la mas alta calidad!</p>
         <img src={img} alt={nombre} />
         {agregarCantidad > 0 ? (
-          <Link to="/cart"> Terminar compra </Link>
+          <Link to="/cart" style={{ color:"black"}}> Terminar compra </Link>
         ) : (
           <ItemCount
             inicial={1}
